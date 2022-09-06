@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NGL - embedded</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+  <!-- <script src="../build/js/ngl.dev.js"></script> -->
+  <script src="static/dist/ngl.js"></script>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var stage = new NGL.Stage("viewport");
+      var pbd_file_name = "static/pbd_files/{{str_uuid}}/{{dir_name}}/{{algorithm}}/{{model_name}}";
+      stage.loadFile( pbd_file_name , {defaultRepresentation: true, ext: "pdb"});
+    });
+  </script>
+  <div id="viewport" style="width:900px; height:900px;"></div>
+</body>
+</html>

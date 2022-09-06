@@ -1,0 +1,5 @@
+flask>=1.1.2
+imgaug>=0.2.6
+numpy>=1.15.4
+opencv-python>=3.4
+mysql-connector-python >= 8.0.2

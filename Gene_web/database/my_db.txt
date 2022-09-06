@@ -1,0 +1,7 @@
+create view view_gene_phenotype as
+(select pg.gene, pg.phenosubtype_id, pt.phenotype, pt.phenosubtype, ge.omim from tb_phenotype as pt
+join tb_phenotype_gene as pg
+join tb_gene as ge
+on pt.id=pg.phenosubtype_id
+and pg.gene=ge.gene)
+

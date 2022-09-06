@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phenotype</title>
+</head>
+<body>
+    <a href="/gene">by genes</a> &nbsp; &nbsp; <a href="/phenotype">by phenotypes</a>
+    <p></p>
+    <p></p>
+
+    <table>
+        phenotype, phenosubtype, list_genes, list_omim
+        <tr>
+            <td>phenotype</td>
+            <td>phenosubtype</td>
+            <td>genes</td>
+<!--            <td>omim</td>-->
+        </tr>
+        {%for phenotype in result_phenotype%}
+        <tr>
+            <td>{{phenotype[1]}}</td>
+            <td>{{phenotype[2]}}</td>
+            <td>
+                {%for gene in phenotype[3]%}
+                    <a href="gene_detail_jji/{{gene}}">{{gene}}</a>
+                {%endfor%}
+            </td>
+<!--            <td>-->
+<!--                {%for omim in phenotype[4]%}-->
+<!--                    {{omim}},-->
+<!--                {%endfor%}-->
+<!--            </td>-->
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

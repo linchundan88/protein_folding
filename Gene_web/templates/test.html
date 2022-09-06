@@ -1,0 +1,144 @@
+$(function(){
+
+    $('.btn_search').click(function(){
+        var gene_name = $('.text_gene_name').val();
+        console.log(gene_name);
+        var data = {
+            data: JSON.stringify({
+                'gene_name':gene_name,
+                }),
+            }
+
+        $.ajax({
+            type: 'POST',
+            url: '/gene_main_list/',
+            data: data,
+            success: function(data){
+                $('.result_list').html(data);
+            }
+
+         });
+
+    });
+
+});
+
+$('.btn_clean').on('click',function() {
+        $('.text_gene_name').html('');
+    })
+
+
+href="?disease={{disease.0}}"
+
+href="?initials={{initials.0}}"
+
+
+<label class="col-sm-2 text-left"><b>Diseases: 眼的整体畸形</b></label>
+          <label class="col-sm-2 control-label text-left"><b>Hypotype: 小眼畸形</b></label>
+          <label class="col-sm-2 control-label text-left"><b>Gene: VSX2</b></label>
+          <label class="col-sm-2 control-label text-left"><b>OMIM: 610093</b></label>
+          <label class="col-sm-2 control-label text-left"><b>WT/mutants: Mutants</b></label>
+          <label class="col-sm-2 control-label text-left"><b>Protein sequence length: 361</b></label>
+
+
+
+    <div class="col-md-12" style="padding:20px;">
+      <div class="col-md-12 padding-0">
+        <div class="col-md-8 padding-0">
+          <div class="col-md-12 padding-0">
+
+            <div class="col-md-6">
+              <div class="panel box-v1">
+
+
+
+                <div class="col-md-12 text-left bg-primary">
+                    <h4><i>Alphafold2:</i></h4>
+                    <select class="form-control bg-light-grey">
+                      <option>ranked_0.pdb</option>
+                      <option>ranked_1.pdb</option>
+                      <option>ranked_2.pdb</option>
+                      <option>ranked_3.pdb</option>
+                      <option>ranked_4.pdb</option>
+                    </select>
+                    <br>
+                </div>
+
+
+                <div class="panel-body bg-primary">
+
+                  <div class="col-md-12 padding-0 text-center">
+
+                    <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
+                      <h4>指标1: 2000</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
+                      <h4>指标2: 1000</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
+                      <h4>指标3: 1000</h4>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+                <div class="panel-heading padding-0">
+                  <img src="asset/img/gene1.png" class="box-v2-cover img-responsive"/>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="panel box-v1">
+
+                <div class="col-md-12 text-left bg-lime">
+                  <h4><i>RoseTTA:</i></h4>
+                  <select class="form-control bg-light-grey">
+                    <option>model_1.crderr.pdb</option>
+                    <option>model_2.crderr.pdb</option>
+                    <option>model_3.crderr.pdb</option>
+                    <option>model_4.crderr.pdb</option>
+                    <option>model_5.crderr.pdb</option>
+                  </select>
+                  <br>
+                </div>
+
+
+                <div class="panel-body bg-lime">
+                  <div class="col-md-12 padding-0 text-center">
+                    <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
+                      <h4>指标1: 2000</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
+                      <h4>指标2: 1000</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
+                      <h4>指标3: 1000</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel-heading padding-0">
+                  <img src="asset/img/gene2.png" class="box-v2-cover img-responsive"/>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+RTAQLRKANDQSGRCQYTFSVASPNESSCPEQSQAMSVIHNLQRDSSTQRLDLEATKARLSSLESLLHQLTLDQAARPQETQEGLQRELGTLRRERDQLETQTRELETAYSNLLRDKSVLEEEKKRLRQENENLARRLESSSQEVARLRRGQCPQTRDTARAVPPGSREVSTWNLETLAFQELKSELTEVPASRILKESPSGYLRSGEGDTGCGELVWVGEPLTLRTAETITGKYGVWMRDPKPTYPYTQETTWRIDTVGTDVRQVFEYDLISQFMQGYPSKVHILPRPLESTGAVVYSGSLYFQGAESRTVIRYELNTETVKAEKEIPGAGYHGQFPYSWGGYTDIDLAVDEAGLWVIYSTDEAKGAIVLSKLNPENLELEQTWETNIRKQSVANAFIICGTLYTVSSYTSADATVNFAYDTGTGISKTLTIPFKNRYKYSSMIDYNPLEKKLFAWDNLNMVTYDIKLSKM

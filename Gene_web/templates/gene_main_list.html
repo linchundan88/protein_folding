@@ -1,0 +1,68 @@
+<div class="panel result_list">
+<!--          <div class="panel-heading">-->
+<!--            <h3>Query results</h3>-->
+<!--          </div>-->
+          <div class="panel-body">
+            <div class="responsive-table">
+              <div id="datatables-example_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table class="table table-striped table-bordered dataTable no-footer" width="100%" cellspacing="0"  style="width: 100%;">
+                      <thead>
+                        <tr role="row">
+<!--                          <th class="sorting_asc"style="width: 60px;">Diseases</th>-->
+                          <th class="sorting" style="width: 60px;">Phenotype</th>
+                          <th class="sorting" style="width: 60px;">Genes</th>
+                          <th class="sorting" style="width: 60px;">OMIM (link to NCBI)</th>
+                          <th class="sorting"  style="width: 60px;">WT/mutants</th>
+<!--                          <th class="sorting"  style="width: 60px;">Protein sequence</th>-->
+                          <th class="sorting"  style="width: 60px;">Protein sequence length</th>
+                          <th class="sorting"  style="width: 60px;">AlphaFold PDB link</th>
+                          <th class="sorting"  style="width: 60px;">AlphaFold Confidence</th>
+                          <th class="sorting"  style="width: 60px;">RoseTTA PDB link</th>
+                          <th class="sorting"  style="width: 60px;">RoseTTA Atomic vibration range</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                      
+
+                      {% for rl in result_list %}
+
+                        <tr role="row" class="odd">
+<!--                          <td class="sorting_1">Airi Satou</td>-->
+<!--                          <td>{{rl.1}}</td>-->
+                          <td>{{rl.2}}</td>
+                          <td>{{rl.3}}</td>
+                          <td>{{rl.4}}</td>
+                          <td>{{rl.5}}</td>
+<!--                          <td>{{rl.6}}</td>-->
+                          <td>{{rl.7}}</td>
+
+                          <td><a target="blank" href="" >{{rl.9}} </a></td>
+                          <td>100%</td>
+
+                          {% if rl.8 == 1%}
+                            <td><a target="blank" href="" >{{rl.9}} </a></td>
+                            <td>0.0~1.0</td>
+                          {% else %}
+                            <td></td>
+                            <td></td>
+                          {% endif %}
+
+                        </tr>
+
+
+                      {% endfor %}
+
+                     
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>

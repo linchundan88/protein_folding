@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{results_gene[0]}}</title>
+</head>
+<body>
+    <a href="/gene">by genes</a> &nbsp; &nbsp; <a href="/phenotype">by phenotypes</a>
+    <p></p>
+    <p></p>
+
+    <h3>Gene:{{results_gene[0]}}</h3>
+    <a href="https://www.omim.org/entry/{{results_gene[1]}}">OMIM:{{results_gene[1]}}</a>
+
+    <p>
+    </p>
+
+    <table>
+    <tr>
+<!--        gene, algorithm, seq_len, seq_text ,dir_name,  docx_name-->
+        <td>algorithm</td>
+        <td>seq_len</td>
+        <td>dir_name</td>
+        <td>docx_name</td>
+        <td></td>
+    </tr>
+    {%for detail in results_gene_detail%}
+        <tr>
+            <td>{{detail[1]}}</td>
+            <td>{{detail[2]}}</td>
+            <td>{{detail[4]}}</td>
+            <td>{{detail[5]}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="xxxxx">
+<meta name="author" content="xxxxx">
+<meta name="keyword" content="xxxxx">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gene AI platform</title>
+<!-- start: Css -->
+<link rel="stylesheet" type="text/css" href="static/asset/css/bootstrap.min.css">
+<!-- plugins -->
+<link rel="stylesheet" type="text/css" href="static/asset/css/plugins/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="static/asset/css/plugins/simple-line-icons.css"/>
+<link rel="stylesheet" type="text/css" href="static/asset/css/plugins/animate.min.css"/>
+<link rel="stylesheet" type="text/css" href="static/asset/css/plugins/fullcalendar.min.css"/>
+<link href="static/asset/css/style.css" rel="stylesheet">
+<!-- end: Css -->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="static/asset/js/html5shiv.min.js"></script>
+      <script src="static/asset/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="mimin" class="dashboard">
+<!-- start: Header -->
+<nav class="navbar navbar-default header navbar-fixed-top" style="background-color:#225ADB;">
+  <div class="col-md-12 nav-wrapper">
+    <div class="navbar-header" style="width:100%;" >
+
+        <h4> </h4>
+        <h3 class="fadeInLeft" style="display: inline;" ><font color="White"><b>EyeProdb</b></font></h3>
+        <h4 class="fadeInLeft" style="display: inline;" ><font color="LightGray"><b>&nbsp;Ocular Protein Structure Database</b></font></h4>
+
+
+<!--      <div class="opener-left-menu is-open"> <span class="top"></span> <span class="middle"></span> <span class="bottom"></span> </div>-->
+<!--      <a href="index.html" class="navbar-brand"> <b>xxxxx</b> </a>-->
+<!--      <ul class="nav navbar-nav navbar-right user-nav">-->
+<!--&lt;!&ndash;        <li class="user-name"><span>xxx</span></li>&ndash;&gt;-->
+<!--&lt;!&ndash;        <li class="dropdown avatar-dropdown"> <img src="static/asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>&ndash;&gt;-->
+<!--&lt;!&ndash;          <ul class="dropdown-menu user-dropdown">&ndash;&gt;-->
+<!--&lt;!&ndash;            <li><a href="#"><span class="fa fa-power-off"></span> 退出登录</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;          </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;        </li>&ndash;&gt;-->
+<!--      </ul>-->
+    </div>
+  </div>
+</nav>
+<!-- end: Header -->
+<div class="container-fluid mimin-wrapper"> 
+  <!-- start:Left Menu -->
+  <div id="left-menu">
+    <div class="sub-left-menu scroll">
+      <ul class="nav nav-list">
+        <li>
+          <div class="left-bg"></div>
+        </li>
+        <li class="ripple"> <a href="/">HOME</a></li>
+          <li class="ripple"> <a href="/gene_request">REQUEST</a></li>
+          <li class="ripple"> <a href="/">HELP</a></li>
+          <li class="ripple"> <a href="/">ABOUT</a></li>
+<!--        <li class="ripple active"> <a class="tree-toggle nav-header"  id="left-menu-2"> <span class="fa-diamond fa"></span> 表单 <span class="fa-angle-right fa right-arrow text-right"></span> </a>-->
+<!--          <ul class="nav nav-list tree" >-->
+<!--            <li><a href="list.html">列表</a></li>-->
+<!--            <li><a href="edit.html">编辑</a></li>-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--        <li class=" ripple"> <a class="tree-toggle nav-header"  id="left-menu-3"><span class="fa fa-check-square-o"></span> Browse by Alphabet <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class=" ripple"> <a class="tree-toggle nav-header"  id="left-menu-4"><span class="fa fa-calendar-o"></span> Browse by subspecialties <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+
+<!--        <li class=" ripple"> <a class="tree-toggle nav-header"  id="left-menu-3"><span class="fa fa-check-square-o"></span> HOW TO USE THIS SITE <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class=" ripple"> <a class="tree-toggle nav-header"  id="left-menu-4"><span class="fa fa-calendar-o"></span> SEARCH TIPS <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+
+<!--        <li class=" ripple"> <a class="tree-toggle nav-header"  id="left-menu-3"><span class="fa fa-check-square-o"></span> ABOUT THIS SITE <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class=" ripple"> <a class="tree-toggle nav-header"  id="left-menu-4"><span class="fa fa-calendar-o"></span> Browse by subspecialties <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+
+<!--        <li class="ripple"> <a class="tree-toggle nav-header" id="left-menu-2"><span class="fa-home fa"></span> Browse by Alphabet <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class="ripple"> <a class="tree-toggle nav-header" id="left-menu-3"><span class="fa-home fa"></span> Browse by subspecialties <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class="ripple"> <a class="tree-toggle nav-header" id="left-menu-4"><span class="fa-home fa"></span> HOW TO USE THIS SITE <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class="ripple"> <a class="tree-toggle nav-header" id="left-menu-5"><span class="fa-home fa"></span> SEARCH TIPS <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class="ripple"> <a class="tree-toggle nav-header" id="left-menu-6"><span class="fa-home fa"></span> ABOUT THIS SITE <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- end: Left Menu --> 
+  
+  <!-- start: content -->
+  <div id="content">
+    <div class="panel" style="background-color:#2196F3;">
+      <div class="panel-body" >
+        <div class="col-md-12" >
+          <h3 class="fadeInLeft" style="font-size:180%"><font color="White" ><b>Joint Shantou International Eye Centre of Shantou University and The Chinese University of Hong Kong</b></font></h3>
+
+<!--          <p class="animated fadeInDown"> 业务 <span class="fa-angle-right fa"></span> 新增页面 </p>-->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 padding-0 form-element">
+      <div class="col-md-12">
+       <div class="panel form-element-padding">
+<!--            <div class="panel-heading">-->
+<!--              <h4>Inquiry condition</h4>-->
+<!--            </div>-->
+            <div class="panel-body" style="padding-bottom:30px;">
+
+
+<!--                <div class="form-group">-->
+<!--                  {% for disease in disease_type %}-->
+<!--                  <h4 style="display: inline;"><a href="?disease={{disease.0}}" class="active" id="btn_disease"><u>{{disease.0}}</u></a></h4>-->
+<!--                  <h4 style="display: inline;">&nbsp;&nbsp;&nbsp;&nbsp;</a></h4>-->
+<!--                  {% endfor %}-->
+<!--                </div>-->
+
+
+                <form action="/" method="get">
+
+                    <div class="form-group">
+<!--                        <div class="col-sm-2 control-label text-right">-->
+<!--                          <h4><label><font color="Orange"><b>Please input gene name:</b></font></label></h4>-->
+<!--                        </div>-->
+
+                        <div class="col-sm-4" >
+                            <input type="text" class="form-control text_gene_name" id="text-gene-name" name="gene_name" value={{gene_name}}>
+<!--                            <input type="text" class="form-control text_gene_name" id="text-gene-name" name="gene_name" value="Search for disease,protein or gene">-->
+                        </div>
+                        <div class="col-sm-1">
+<!--                            <input class="btn btn-danger btn_search" type="submit" value="Search" id="search-gene-name">-->
+                            <input class="btn btn-info" type="submit" value="Search" id="search-gene-name">
+<!--                            <h4><label><font color="gray">(Search for disease,protein or gene)</font></label></h4>-->
+                        </div>
+                        <div class="col-sm-3 text-left">
+<!--                            <input class="btn btn-danger btn_search" type="submit" value="Search" id="search-gene-name">-->
+<!--                            <input class="btn btn-info" type="submit" value="Search" id="search-gene-name">-->
+                            <h4><label><font color="gray">for phenotype, protein or gene . . .</font></label></h4>
+                        </div>
+                    </div>
+
+                </form>
+
+
+            </div>
+
+
+            <div class="panel-heading">
+
+<!--              <div class="form-group">-->
+               {% for initials in gene_name_initials %}
+                  <h5 style="display: inline;"><a href="?initials={{initials.0}}" class="active" id="btn_initials"><u><i>{{initials.0}}</i></u></a></h5>
+                  <h5 style="display: inline;">&nbsp;&nbsp;</a></h5>
+               {% endfor %}
+<!--              </div>-->
+              <br><br>
+
+            </div>
+
+
+
+          </div>
+
+
+        <div class="panel result_list">
+<!--          <div class="panel-heading">-->
+<!--            <h3>Query results</h3>-->
+<!--          </div>-->
+          <div class="panel-body">
+            <div class="responsive-table">
+              <div id="datatables-example_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table class="table table-striped table-bordered dataTable no-footer" width="100%" cellspacing="0"  style="width: 100%;">
+                      <thead>
+                        <tr role="row">
+<!--                          <th class="sorting_asc" style="width: 60px;">Category</th>-->
+<!--                          <th class="sorting" style="width: 200px;">Disease</th>-->
+                            <th class="sorting" style="width: 300px;">Phenotype</th>
+                          <th class="sorting" style="width: 60px;">Gene</th>
+                          <th class="sorting" style="width: 60px;">Reference</th>
+                          <th class="sorting"  style="width: 60px;">WT/mutant</th>
+<!--                          <th class="sorting"  style="width: 60px;">Protein sequence</th>-->
+                          <th class="sorting"  style="width: 150px;">Sequence length</th>
+                          <th class="sorting"  style="width: 60px;">Predicted PDB</th>
+                          <th class="sorting"  >AlphaFold2 pLDDT</th>
+<!--                          <th class="sorting"  style="width: 60px;">RoseTTA PBD link</th>-->
+                          <th class="sorting"  >RoseTTA B-factor</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+
+
+
+                      {% for rl in result_list %}
+
+                        <tr role="row" class="odd">
+<!--                          <td class="sorting_1">Airi Satou</td>-->
+<!--                          <td>{{rl.1}}</td>-->
+<!--                          <td>{{rl.2}}</td>-->
+                            <td>{{rl.11}}</td>
+                          <td>{{rl.3}}</td>
+
+
+                            <td>
+
+                                {% for rf in rl.4.split(';') %}
+
+                                <a href="javascript:reference_link('{{rf}}')"><u>{{rf}}</u></a>
+
+                                {% endfor %}
+
+                            </td>
+
+
+                          <td>{{rl.5}}</td>
+<!--                          <td>{{rl.6}}</td>-->
+                          <td>{{rl.7}}</td>
+
+                          <td><a target="blank" href="/gene_detail?id={{rl.0}}&pbd_link={{rl.9}}" ><u>{{rl.9}}</u></a></td>
+                          <td>{{rl.14}}</td>
+
+                          {% if rl.8 == 1%}
+<!--                            <td><a target="blank" href="/gene_detail?id={{rl.0}}&pbd_link={{rl.9}}" ><u>{{rl.9}}</u></a></td>-->
+                            <td>{{rl.16}}</td>
+                          {% else %}
+                            <td></td>
+                            <td></td>
+                          {% endif %}
+
+                        </tr>
+
+
+                      {% endfor %}
+
+
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- end: content --> 
+</div>
+<!-- start: Javascript --> 
+<script src="static/asset/js/jquery.min.js"></script>
+<script src="static/asset/js/jquery.ui.min.js"></script>
+<script src="static/asset/js/bootstrap.min.js"></script>
+<!-- plugins --> 
+<script src="static/asset/js/plugins/jquery.nicescroll.js"></script>
+<!-- custom -->
+
+
+<!--<script type="text/javascript">-->
+
+<!--    $(function(){-->
+
+<!--        $('#search-gene-name').click(function(){-->
+
+<!--            var gene_name = $('#text-gene-name').val();-->
+<!--            console.log(gene_name);-->
+<!--            var data = {-->
+<!--                data: JSON.stringify({-->
+<!--                    'disease_name': '',-->
+<!--                    'gene_name': gene_name,-->
+<!--                    'initials': '',-->
+<!--                    }),-->
+<!--                }-->
+
+<!--            $.ajax({-->
+<!--                type: 'POST',-->
+<!--                url: '/gene_main_list',-->
+<!--                data: data,-->
+<!--                success: function(data){-->
+<!--                    console.log(data);-->
+<!--                    $('.result_list').html(data);-->
+<!--                }-->
+
+<!--             });-->
+
+<!--        });-->
+
+
+
+<!--        $('#btn_disease').click(function(){-->
+
+<!--            var disease_name = $('#btn_disease').val();-->
+<!--            console.log(disease_name);-->
+<!--            var data = {-->
+<!--                data: JSON.stringify({-->
+<!--                    'disease_name': disease_name,-->
+<!--                    'gene_name': '',-->
+<!--                    'initials': '',-->
+<!--                    }),-->
+<!--                }-->
+
+<!--            $.ajax({-->
+<!--                type: 'POST',-->
+<!--                url: '/gene_main_list',-->
+<!--                data: data,-->
+<!--                success: function(data){-->
+<!--                    console.log(data);-->
+<!--                    $('.result_list').html(data);-->
+<!--                }-->
+
+<!--             });-->
+
+<!--        });-->
+
+
+<!--        $('#btn_initials').click(function(){-->
+
+<!--            var initials = $('#btn_initials').val();-->
+<!--            console.log(initials);-->
+<!--            var data = {-->
+<!--                data: JSON.stringify({-->
+<!--                    'disease_name': '',-->
+<!--                    'gene_name': '',-->
+<!--                    'initials': initials,-->
+<!--                    }),-->
+<!--                }-->
+
+<!--            $.ajax({-->
+<!--                type: 'POST',-->
+<!--                url: '/gene_main_list',-->
+<!--                data: data,-->
+<!--                success: function(data){-->
+<!--                    console.log(data);-->
+<!--                    $('.result_list').html(data);-->
+<!--                }-->
+
+<!--             });-->
+
+<!--        });-->
+
+
+<!--    });-->
+
+<!--</script>-->
+
+<script>
+function reference_link(my_reference) {
+
+    var my_type = my_reference.split(":")[0].trim().toUpperCase();
+    var my_code = my_reference.split(":")[1].trim();
+    var my_url = '';
+
+    switch (my_type) {
+
+        case 'OMIM':
+           my_url = 'https://www.omim.org/entry/' + my_code;
+           break;
+
+        case 'PMID':
+            my_url = 'https://pubmed.ncbi.nlm.nih.gov/' + my_code;
+            break;
+
+        case 'PUBMED':
+            my_url = 'https://pubmed.ncbi.nlm.nih.gov/' + my_code;
+            break;
+
+        default:
+            my_url = '';
+    }
+
+    window.open(my_url);
+}
+</script>
+
+<script src="static/asset/js/main.js"></script>
+
+
+<!-- end: Javascript -->
+<!--<script>-->
+<!--$("#left-menu-2").click() ;-->
+<!--</script>-->
+</body>
+</html>

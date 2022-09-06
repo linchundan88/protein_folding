@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="xxxxx">
+<meta name="author" content="xxxxx">
+<meta name="keyword" content="xxxxx">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gene AI platform</title>
+<!-- start: Css -->
+<link rel="stylesheet" type="text/css" href="static/asset/css/bootstrap.min.css">
+<!-- plugins -->
+<link rel="stylesheet" type="text/css" href="static/asset/css/plugins/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="static/asset/css/plugins/simple-line-icons.css"/>
+<link rel="stylesheet" type="text/css" href="static/asset/css/plugins/animate.min.css"/>
+<link rel="stylesheet" type="text/css" href="static/asset/css/plugins/fullcalendar.min.css"/>
+<link href="static/asset/css/style.css" rel="stylesheet">
+<!-- end: Css -->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="static/asset/js/html5shiv.min.js"></script>
+      <script src="static/asset/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="mimin" class="dashboard">
+<!-- start: Header -->
+<nav class="navbar navbar-default header navbar-fixed-top" style="background-color:#225ADB;">
+  <div class="col-md-12 nav-wrapper">
+    <div class="navbar-header" style="width:100%;">
+        <h4> </h4>
+        <h3 class="fadeInLeft" style="display: inline;" ><font color="White"><b>EyeProdb</b></font></h3>
+        <h4 class="fadeInLeft" style="display: inline;" ><font color="LightGray"><b>&nbsp;Ocular Protein Structure Database</b></font></h3>
+
+<!--      <div class="opener-left-menu is-open"> <span class="top"></span> <span class="middle"></span> <span class="bottom"></span> </div>-->
+<!--      <a href="index.html" class="navbar-brand"> <b>xxxxx</b> </a>-->
+<!--      <ul class="nav navbar-nav navbar-right user-nav">-->
+<!--&lt;!&ndash;        <li class="user-name"><span>xxx</span></li>&ndash;&gt;-->
+<!--&lt;!&ndash;        <li class="dropdown avatar-dropdown"> <img src="static/asset/img/avatar.jpg" class="img-circle avatar" alt="user name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>&ndash;&gt;-->
+<!--&lt;!&ndash;          <ul class="dropdown-menu user-dropdown">&ndash;&gt;-->
+<!--&lt;!&ndash;            <li><a href="#"><span class="fa fa-power-off"></span> 退出登录</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;          </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;        </li>&ndash;&gt;-->
+<!--      </ul>-->
+    </div>
+  </div>
+</nav>
+<!-- end: Header -->
+<div class="container-fluid mimin-wrapper"> 
+  <!-- start:Left Menu -->
+  <div id="left-menu">
+    <div class="sub-left-menu scroll">
+      <ul class="nav nav-list">
+        <li>
+          <div class="left-bg"></div>
+        </li>
+        <li class="ripple"> <a href="/">HOME</a></li>
+          <li class="ripple"> <a href="/gene_request">REQUEST</a></li>
+          <li class="ripple"> <a href="/">HELP</a></li>
+          <li class="ripple"> <a href="/">ABOUT</a></li>
+<!--        <li class="ripple active"> <a class="tree-toggle nav-header"  id="left-menu-2"> <span class="fa-diamond fa"></span> 表单 <span class="fa-angle-right fa right-arrow text-right"></span> </a>-->
+<!--          <ul class="nav nav-list tree" >-->
+<!--            <li><a href="list.html">列表</a></li>-->
+<!--            <li><a href="edit.html">编辑</a></li>-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--        <li class=" ripple"> <a class="tree-toggle nav-header"  id="left-menu-3"><span class="fa fa-check-square-o"></span> Browse by Alphabet <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class=" ripple"> <a class="tree-toggle nav-header"  id="left-menu-4"><span class="fa fa-calendar-o"></span> Browse by subspecialties <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+
+<!--        <li class=" ripple"> <a class="tree-toggle nav-header"  id="left-menu-3"><span class="fa fa-check-square-o"></span> HOW TO USE THIS SITE <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class=" ripple"> <a class="tree-toggle nav-header"  id="left-menu-4"><span class="fa fa-calendar-o"></span> SEARCH TIPS <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+
+<!--        <li class=" ripple"> <a class="tree-toggle nav-header"  id="left-menu-3"><span class="fa fa-check-square-o"></span> ABOUT THIS SITE <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class=" ripple"> <a class="tree-toggle nav-header"  id="left-menu-4"><span class="fa fa-calendar-o"></span> Browse by subspecialties <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+
+<!--        <li class="ripple"> <a class="tree-toggle nav-header" id="left-menu-2"><span class="fa-home fa"></span> Browse by Alphabet <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class="ripple"> <a class="tree-toggle nav-header" id="left-menu-3"><span class="fa-home fa"></span> Browse by subspecialties <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class="ripple"> <a class="tree-toggle nav-header" id="left-menu-4"><span class="fa-home fa"></span> HOW TO USE THIS SITE <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class="ripple"> <a class="tree-toggle nav-header" id="left-menu-5"><span class="fa-home fa"></span> SEARCH TIPS <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+<!--        <li class="ripple"> <a class="tree-toggle nav-header" id="left-menu-6"><span class="fa-home fa"></span> ABOUT THIS SITE <span class="fa-angle-right fa right-arrow text-right"></span> </a> </li>-->
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- end: Left Menu --> 
+  
+  <!-- start: content -->
+  <div id="content">
+
+    <div class="panel" style="background-color:#2196F3;">
+      <div class="panel-body">
+        <div class="col-md-12">
+          <h3 class="fadeInLeft" style="font-size:180%"><font color="White"><b>Joint Shantou International Eye Centre of Shantou University and The Chinese University of Hong Kong</b></font></h3>
+<!--          <p class="animated fadeInDown"> 业务 <span class="fa-angle-right fa"></span> 新增页面 </p>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 padding-0 form-element">
+      <div class="col-md-12" >
+       <div class="panel form-element-padding" >
+<!--            <div class="panel-heading">-->
+<!--              <h4>Inquiry condition</h4>-->
+<!--            </div>-->
+            <div class="panel-heading" style="background: AliceBlue;" >
+
+
+<!--                <div class="form-group">-->
+
+
+<!--                    <label class="col-sm-2 text-left"><b>Diseases: 眼的整体畸形</b></label>-->
+<!--                    <label class="col-sm-2 control-label text-left"><b>Hypotype: 小眼畸形</b></label>-->
+<!--                    <label class="col-sm-2 control-label text-left"><b>Gene: VSX2</b></label>-->
+<!--                    <label class="col-sm-2 control-label text-left"><b>OMIM: 610093</b></label>-->
+<!--                    <label class="col-sm-2 control-label text-left"><b>WT/mutants: Mutants</b></label>-->
+<!--                    <label class="col-sm-2 control-label text-left"><b>Protein sequence length: 361</b></label>-->
+
+<!--                    <h5 style="display: inline;"><b>Category : </b> <u>{{result_one.1}}</u></h5>-->
+<!--                    <h5 style="display: inline;">&nbsp;&nbsp;&nbsp;&nbsp;</h5>-->
+
+<!--                    <h5 style="display: inline;" ><b>Disease : </b> <u>{{result_one.2}}</u></h5>-->
+<!--                    <h5 style="display: inline;">&nbsp;&nbsp;&nbsp;&nbsp;</h5>-->
+
+                    <h5 style="display: inline;" ><b>Phenotype : </b> <u>{{result_one.11}}</u></h5>
+                    <h5 style="display: inline;">&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+
+                    <h5 style="display: inline;" ><b>Gene : </b> <u>{{result_one.3}}</u></h5>
+                    <h5 style="display: inline;">&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+
+                    <h5 style="display: inline;" ><b>Reference : </b>
+
+                        {% for rf in result_one.4.split(';') %}
+
+                        <a href="javascript:reference_link('{{rf}}')" ><u>{{rf}}</u></a>
+
+                        {% endfor %}
+
+                    </h5>
+
+
+                    <h5 style="display: inline;">&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+
+                    <h5 style="display: inline;" ><b>WT/mutant : </b> <u>{{result_one.5}}</u></h5>
+                    <h5 style="display: inline;">&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+
+<!--                </div>-->
+
+
+<!--                    <input class="btn btn-primary" type="button" value="Download pbd files" >-->
+
+<!--            </div>-->
+
+
+<!--            <div class="panel-heading" style="background: Beige;">-->
+
+                <h5><b>Protein sequence ( length = {{result_one.7}} ) :</b></h5>
+                <textarea rows="3" style="width:100%; background: transparent;" readonly >{{result_one.6}}</textarea>
+            </div>
+
+
+
+          </div>
+
+
+
+        <div class="col-md-12 padding-0">
+
+            <div class="col-md-6">
+
+                <div class="panel box-v4">
+
+                <div class="col-md-12 text-left">
+                    <h5><b>Alphafold2:</b></h5>
+                    <select class="form-control" id = "select_pbd_alphafold" onchange="pbd_alphafold_onchange()">
+
+                      {% for key in dict_plddt %}
+                        <option value = "{{dict_plddt[key]}}">{{key}}</option>
+                      {% endfor %}
+
+
+                    </select>
+
+                    <br>
+                </div>
+
+                <div class="panel-body">
+                  <div class="col-md-12 padding-0 text-center">
+
+
+                    <div class="col-md-4 col-sm-4 col-xs-6 padding-0" >
+                        <h5><b>pLDDT : </b> <u> <span id="plddt_alphafold">{{result_one.14}}</span> </u></h5>
+                    </div>
+
+                      <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
+                          <h5><a href="javascript:full_screen_alphafold()" ><u><b>Full-screen view</b></u></a></h5>
+                    </div>
+
+                       <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
+                      <h5><a href="javascript:download_pbd_alphafold()" ><u><b>Download pdb</b></u></a></h5>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="panel-heading padding-0">
+                    <div id="viewport_alphafold" style="display: block; width: 100%; height:800px;"></div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="panel box-v4">
+
+                <div class="col-md-12 text-left">
+                  <h5><b>RoseTTA:</b></h5>
+                  <select class="form-control" id = "select_pbd_rosetta" onchange="pbd_rosetta_onchange()">
+
+
+                      {% for key in dict_b_factor %}
+                        <option value = "{{dict_b_factor[key]}}">{{key}}</option>
+                      {% endfor %}
+
+
+                  </select>
+                  <br>
+                </div>
+
+
+                <div class="panel-body">
+                  <div class="col-md-12 padding-0 text-center">
+
+                    <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
+                        <h5><b>B-factor : </b> <u><span id="b_factor_rosetta">{{result_one.16}}</span></u></h5>
+                    </div>
+
+                       <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
+                           <h5><a href="javascript:full_screen_rosetta()" ><u><b>Full-screen view</b></u></a></h5>
+                    </div>
+
+                      <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
+                      <h5><a href="javascript:download_pbd_rosetta()" ><u><b>Download pdb</b></u></a></h5>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="panel-heading padding-0">
+                    <div id="viewport_rosetta" style="display: block; width: 100%; height:800px;"></div>
+                </div>
+
+            </div>
+            </div>
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+  </div>
+  <!-- end: content --> 
+</div>
+<!-- start: Javascript --> 
+<script src="static/asset/js/jquery.min.js"></script>
+<script src="static/asset/js/jquery.ui.min.js"></script>
+<script src="static/asset/js/bootstrap.min.js"></script>
+<!-- plugins --> 
+<script src="static/asset/js/plugins/jquery.nicescroll.js"></script>
+<!-- custom -->
+
+<script src="static/dist/ngl.js"></script>
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        var pbd_name = $("#select_pbd_alphafold").find("option:selected").text();
+        var pbd_file_name = "static/pbd_files/{{result_one.10}}/{{result_one.9}}/alphafold/" + pbd_name;
+
+        var stage = new NGL.Stage("viewport_alphafold");
+        stage.loadFile( pbd_file_name , {defaultRepresentation: true, ext: "pdb"});
+
+    });
+ </script>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        var pbd_name = $('#select_pbd_rosetta').find("option:selected").text();
+        var pbd_file_name = "static/pbd_files/{{result_one.10}}/{{result_one.9}}/rosetta/" + pbd_name;
+
+        var stage = new NGL.Stage("viewport_rosetta");
+        stage.loadFile( pbd_file_name , {defaultRepresentation: true, ext: "pdb"});
+
+    });
+
+ </script>
+
+<script>
+
+    function pbd_alphafold_onchange(){
+
+        var pbd_name = $('#select_pbd_alphafold').find("option:selected").text();
+        var pbd_file_name = "static/pbd_files/{{result_one.10}}/{{result_one.9}}/alphafold/" + pbd_name;
+
+        $("#viewport_alphafold").html("");
+
+        var stage = new NGL.Stage("viewport_alphafold");
+        stage.loadFile( pbd_file_name , {defaultRepresentation: true, ext: "pdb"});
+
+        var plddt = $('#select_pbd_alphafold').val();
+        $("#plddt_alphafold").html(plddt);
+
+    }
+
+</script>
+
+<script>
+
+    function pbd_rosetta_onchange(){
+
+        var pbd_name = $('#select_pbd_rosetta').find("option:selected").text();
+        var pbd_file_name = "static/pbd_files/{{result_one.10}}/{{result_one.9}}/rosetta/" + pbd_name;
+
+        $("#viewport_rosetta").html("");
+
+        var stage = new NGL.Stage("viewport_rosetta");
+        stage.loadFile( pbd_file_name , {defaultRepresentation: true, ext: "pdb"});
+
+        var b_factor = $('#select_pbd_rosetta').val();
+        $("#b_factor_rosetta").html(b_factor);
+
+    }
+
+</script>
+
+<script>
+function full_screen_alphafold() {
+    var pbd_name = $('#select_pbd_alphafold').find("option:selected").text();
+    var my_url = "/embedded?str_uuid={{result_one.10}}&dir_name={{result_one.9}}&algorithm=alphafold&model_name=" + pbd_name;
+    window.location.href = my_url;
+}
+</script>
+
+<script>
+function full_screen_rosetta() {
+    var pbd_name = $('#select_pbd_rosetta').find("option:selected").text();
+    var my_url = "/embedded?str_uuid={{result_one.10}}&dir_name={{result_one.9}}&algorithm=rosetta&model_name=" + pbd_name;
+    window.location.href = my_url;
+}
+</script>
+
+<script>
+function download_pbd_alphafold() {
+    var pbd_name = $('#select_pbd_alphafold').find("option:selected").text();
+    var my_url = "static/pbd_files/{{result_one.10}}/{{result_one.9}}/alphafold/" + pbd_name;
+    window.open(my_url);
+}
+</script>
+
+<script>
+function download_pbd_rosetta() {
+    var pbd_name = $('#select_pbd_rosetta').find("option:selected").text();
+    var my_url = "static/pbd_files/{{result_one.10}}/{{result_one.9}}/rosetta/" + pbd_name;
+    window.open(my_url);
+}
+</script>
+
+<script>
+function reference_link(my_reference) {
+
+    var my_type = my_reference.split(":")[0].trim().toUpperCase();;
+    var my_code = my_reference.split(":")[1].trim();
+    var my_url = '';
+
+    switch (my_type) {
+
+        case 'OMIM':
+           my_url = 'https://www.omim.org/entry/' + my_code;
+           break;
+
+        case 'PMID':
+            my_url = 'https://pubmed.ncbi.nlm.nih.gov/' + my_code;
+            break;
+
+        case 'PUBMED':
+            my_url = 'https://pubmed.ncbi.nlm.nih.gov/' + my_code;
+            break;
+
+        default:
+            my_url = '';
+    }
+
+    window.open(my_url);
+}
+</script>
+
+
+<script src="static/asset/js/main.js"></script>
+
+
+<!-- end: Javascript -->
+<!--<script>-->
+<!--$("#left-menu-2").click() ;-->
+<!--</script>-->
+</body>
+</html>
